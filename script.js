@@ -38,26 +38,36 @@ document.addEventListener('DOMContentLoaded', () => {
   const themeToggle = document.getElementById('theme-toggle');
 
   if (themeToggle) {
-    // Sync the icon/label with whatever theme was already applied on load.
-    const initialIsDark = document.documentElement.getAttribute('data-theme') === 'dark';
-    themeToggle.textContent = initialIsDark ? '☀' : '☾';
+    // Sync the icon/label with the current theme
+    const isDark =
+      document.documentElement.getAttribute('data-theme') === 'dark';
+
+    themeToggle.textContent = isDark ? '☀' : '☾';
     themeToggle.setAttribute(
       'aria-label',
-      initialIsDark ? 'Switch to light mode' : 'Switch to dark mode'
+      isDark ? 'Switch to light mode' : 'Switch to dark mode'
     );
 
     themeToggle.addEventListener('click', () => {
       const html = document.documentElement;
       const isDark = html.getAttribute('data-theme') === 'dark';
+
       const newTheme = isDark ? 'light' : 'dark';
 
+      // Apply theme
       html.setAttribute('data-theme', newTheme);
+
+      // Remember user's preference
       localStorage.setItem('theme', newTheme);
 
-      themeToggle.textContent = isDark ? '☾' : '☀';
+      // Update button
+      themeToggle.textContent = newTheme === 'dark' ? '☀' : '☾';
+
       themeToggle.setAttribute(
         'aria-label',
-        isDark ? 'Switch to dark mode' : 'Switch to light mode'
+        newTheme === 'dark'
+          ? 'Switch to light mode'
+          : 'Switch to dark mode'
       );
     });
   }

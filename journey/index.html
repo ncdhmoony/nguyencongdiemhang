@@ -5,6 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Journey — Nguyễn Công Diễm Hằng</title>
   <link rel="stylesheet" href="/styles.css">
+  <script>
+    const savedTheme = localStorage.getItem('theme');
+    document.documentElement.setAttribute(
+      'data-theme',
+      savedTheme || 'light'
+    );
+  </script>
 </head>
 <body data-page="journey">
 
