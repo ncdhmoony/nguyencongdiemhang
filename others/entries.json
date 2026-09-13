@@ -4,20 +4,20 @@
     "displayDate": "12 September 2026",
     "title": "Placeholder entry title",
     "summary": "One or two lines summarizing this entry go here — a short, plain-language preview of what it covers.",
-    "url": "/others/entry-03.html"
+    "url": "./entry-03.html"
   },
   {
     "date": "2026-08-28",
     "displayDate": "28 August 2026",
     "title": "Placeholder entry title",
     "summary": "One or two lines summarizing this entry go here — a short, plain-language preview of what it covers.",
-    "url": "/others/entry-02.html"
+    "url": "./entry-02.html"
   },
   {
     "date": "2026-08-14",
     "displayDate": "14 August 2026",
     "title": "Placeholder entry title",
     "summary": "One or two lines summarizing this entry go here — a short, plain-language preview of what it covers.",
-    "url": "/others/entry-01.html"
+    "url": "./entry-01.html"
   }
 ]
