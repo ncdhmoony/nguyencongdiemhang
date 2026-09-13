@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design System Test</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container" style="padding-top: 3rem;">
+
+    <!-- Temporary toggle for testing only — Phase 2 replaces this with the
+         real nav bar toggle icon. This button exists purely so you can
+         preview both color modes right now. -->
+    <button id="test-toggle" style="font-family: var(--font-serif); font-size: 0.9rem; padding: 0.5rem 1rem; margin-bottom: 2rem; background: none; border: 1px solid var(--color-border); color: var(--color-text); cursor: pointer;">
+      Toggle dark mode (test only)
+    </button>
+
+    <section>
+      <p class="meta">Design system preview — September 2026</p>
+      <h1>The Quick Brown Fox</h1>
+      <h2>A Section Heading Looks Like This</h2>
+      <h3>And a Smaller Sub-heading Here</h3>
+
+      <p>
+        This is a paragraph of ordinary body text, set in the serif type scale
+        that every page on the site will share. It exists to check line length,
+        line height, and general readability before any real page gets built.
+        A good paragraph of body copy should feel comfortable to read for
+        several sentences in a row without the eye getting lost — that is
+        what this block is testing.
+      </p>
+
+      <p>
+        Here is a second paragraph, with a <a href="#">link styled inline</a>
+        to check how link color and underline behave against both the light
+        and dark backgrounds.
+      </p>
+
+      <p class="meta">12 September 2026 — example metadata / date line</p>
+
+      <hr>
+
+      <h2>Checking Contrast &amp; Spacing</h2>
+      <p>
+        This last block exists just to confirm spacing between a heading and
+        the paragraph beneath it feels right, and that the divider line above
+        reads clearly in both color modes without needing an accent color.
+      </p>
+    </section>
+
+  </div>
+
+  <script>
+    // Temporary test-only toggle. Confirms the CSS variables swap correctly.
+    // The permanent version (with icon, nav placement, and always-light-on-load
+    // behavior) gets built properly in Phase 2.
+    const toggleBtn = document.getElementById('test-toggle');
+    toggleBtn.addEventListener('click', () => {
+      const html = document.documentElement;
+      const isDark = html.getAttribute('data-theme') === 'dark';
+      html.setAttribute('data-theme', isDark ? 'light' : 'dark');
+    });
+  </script>
+
+</body>
+</html>
