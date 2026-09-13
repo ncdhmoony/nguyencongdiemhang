@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study — Nguyễn Công Diễm Hằng</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body data-page="study">
+
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="/index.html" class="site-logo">Nguyễn Công Diễm Hằng</a>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="/index.html" data-page="home">Home</a>
+        <a href="/journey/index.html" data-page="journey">Journey</a>
+        <a href="/study/index.html" data-page="study">Study</a>
+        <a href="/research/index.html" data-page="research">Research</a>
+        <a href="/others/index.html" data-page="others">Others</a>
+      </nav>
+
+      <div class="nav-right">
+        <button id="theme-toggle" aria-label="Switch to dark mode">☾</button>
+        <button id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" style="padding-top: 0;">
+
+    <!-- ==========================================================
+         SECTION-SPECIFIC CONTENT — this is the only part that
+         changes when this template is duplicated for Study,
+         Research, and Others:
+           1. <title> above
+           2. data-page on <body>
+           3. the <h1>/description below
+           4. the data-source path on #entry-list (point it at that
+              section's own entries.json)
+         You should NEVER need to touch this file again after that —
+         adding a new entry means editing entries.json only.
+         ========================================================== -->
+    <section class="page-header">
+      <h1>Study</h1>
+      <p>A working log — events, projects, and things learned along the way.</p>
+    </section>
+
+    <section class="entry-list" id="entry-list" data-source="/study/entries.json">
+      <p class="meta">Loading entries…</p>
+    </section>
+    <!-- ========================================================== -->
+
+    <nav class="pagination" id="pagination" aria-label="Pagination"></nav>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <h2>Contact</h2>
+      <nav class="footer-links">
+        <a href="mailto:ncdh.moony@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/ncdhmoony/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/ncdhmoony" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>

@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Research — Nguyễn Công Diễm Hằng</title>
+  <title>Placeholder entry title — Journey — Nguyễn Công Diễm Hằng</title>
   <link rel="stylesheet" href="/styles.css">
 </head>
-<body data-page="research">
+<body data-page="journey">
 
   <header class="site-header">
     <div class="container nav-inner">
@@ -33,27 +33,39 @@
 
     <!-- ==========================================================
          SECTION-SPECIFIC CONTENT — this is the only part that
-         changes when this template is duplicated for Study,
-         Research, and Others:
+         changes per entry, and per section when duplicated for
+         Study, Research, and Others:
            1. <title> above
-           2. data-page on <body>
-           3. the <h1>/description below
-           4. the data-source path on #entry-list (point it at that
-              section's own entries.json)
-         You should NEVER need to touch this file again after that —
-         adding a new entry means editing entries.json only.
+           2. the back-link href/text (which section index)
+           3. date + h1 in .entry-header
+           4. the actual paragraphs inside .entry-body
+           5. the data-source path on #entry-nav (this section's
+              entries.json — same file the index page uses)
+         Nav, footer, and the .entry-nav auto-generated links never
+         need manual editing — they're computed from entries.json.
          ========================================================== -->
-    <section class="page-header">
-      <h1>Research</h1>
-      <p>A working log — events, projects, and things learned along the way.</p>
-    </section>
+    <a class="back-link" href="/journey/index.html">← Back to Journey</a>
 
-    <section class="entry-list" id="entry-list" data-source="/research/entries.json">
-      <p class="meta">Loading entries…</p>
-    </section>
+    <header class="entry-header">
+      <span class="meta">12 September 2026</span>
+      <h1>Placeholder entry title</h1>
+    </header>
+
+    <article class="entry-body">
+      <p>
+        Placeholder body text for this entry. This paragraph exists to
+        check spacing, line length, and readability of the body content
+        area before real writing goes here.
+      </p>
+      <p>
+        A second placeholder paragraph, to confirm spacing between
+        consecutive paragraphs looks right in both color modes and at
+        every screen width.
+      </p>
+    </article>
+
+    <nav class="entry-nav" id="entry-nav" data-source="/journey/entries.json"></nav>
     <!-- ========================================================== -->
-
-    <nav class="pagination" id="pagination" aria-label="Pagination"></nav>
 
   </main>
 
