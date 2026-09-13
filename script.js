@@ -164,6 +164,7 @@ document.addEventListener('DOMContentLoaded', () => {
      neighboring entries. Nothing is hardcoded per entry — reordering or
      adding entries in entries.json automatically updates every page's
      prev/next links. */
+/* ---- 5. Prev/next entry navigation (data-driven) ---- */
   const entryNavEl = document.getElementById('entry-nav');
 
   if (entryNavEl) {
@@ -175,20 +176,29 @@ document.addEventListener('DOMContentLoaded', () => {
         return res.json();
       })
       .then((entries) => {
+        // Sắp xếp bài mới nhất lên đầu
         entries.sort((a, b) => new Date(b.date) - new Date(a.date));
 
-        const currentIndex = entries.findIndex(
-          (entry) => entry.url === window.location.pathname
-        );
+        // Trích xuất tên file hiện tại từ URL (Ví dụ: "entry-02.html")
+        const currentFilename = window.location.pathname.split('/').pop();
+
+        // Tìm vị trí bài viết dựa trên tên file
+        const currentIndex = entries.findIndex((entry) => {
+          const entryFilename = entry.url.split('/').pop();
+          return entryFilename === currentFilename;
+        });
+
         if (currentIndex === -1) return;
 
-        const newer = entries[currentIndex - 1]; // more recent, earlier in the sorted list
-        const older = entries[currentIndex + 1]; // less recent, later in the sorted list
+        // Bài mới hơn (Newer) nằm ở chỉ số nhỏ hơn trong mảng đã sort
+        // Bài cũ hơn (Older) nằm ở chỉ số lớn hơn
+        const newer = entries[currentIndex - 1];
+        const older = entries[currentIndex + 1];
 
         let html = '';
         if (newer) {
           html += `
-            <a href="${newer.url}">
+            <a href="${newer.url}" class="entry-nav-prev">
               <span class="entry-nav-label">← Newer</span>
               <span class="entry-nav-title">${newer.title}</span>
             </a>`;
@@ -204,5 +214,3 @@ document.addEventListener('DOMContentLoaded', () => {
       })
       .catch((err) => console.error(err));
   }
-
-});
