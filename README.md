@@ -8,7 +8,7 @@ A personal landing page to document and share my notes, projects, paper replicat
 
 ## Main Features
 
-- Journey: Records of extracurricular activities, competitions, and experiences shaping intellectual growth.
+- Journey: Records of extracurricular activities and experiences shaping intellectual growth.
 - Study: Projects, technical findings, and study notes aimed at learning and applying new ideas.
 - Research: Independent and replicated research papers addressing real-life problems through data and models.
 - Others: Explorations at the intersection of personal interests, creativity, and technology.
