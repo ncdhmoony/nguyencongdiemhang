@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Journey — Nguyễn Công Diễm Hằng</title>
+  <link rel="stylesheet" href="../styles.css">
+  <script>
+    const savedTheme = localStorage.getItem('theme');
+    document.documentElement.setAttribute(
+      'data-theme',
+      savedTheme || 'light'
+    );
+  </script>
+</head>
+<body data-page="journey">
+
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="../index.html" class="site-logo">Nguyễn Công Diễm Hằng</a>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="../index.html" data-page="home">Home</a>
+        <a href="./index.html" data-page="journey">Journey</a>
+        <a href="../study/index.html" data-page="study">Study</a>
+        <a href="../research/index.html" data-page="research">Research</a>
+        <a href="../others/index.html" data-page="others">Others</a>
+      </nav>
+
+      <div class="nav-right">
+        <button id="theme-toggle" aria-label="Switch to dark mode">☾</button>
+        <button id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" style="padding-top: 0;">
+
+    <!-- ==========================================================
+         SECTION-SPECIFIC CONTENT — this is the only part that
+         changes per entry, and per section when duplicated for
+         Study, Research, and Others:
+           1. <title> above
+           2. the back-link href/text (which section index)
+           3. date + h1 in .entry-header
+           4. the actual paragraphs inside .entry-body
+           5. the data-source path on #entry-nav (this section's
+              entries.json — same file the index page uses)
+         Nav, footer, and the .entry-nav auto-generated links never
+         need manual editing — they're computed from entries.json.
+         ========================================================== -->
+    <a class="back-link" href="./index.html">← Back to Journey</a>
+
+    <header class="entry-header">
+      <span class="meta">2020</span>
+      <h1>From Class President to Data Science: Learning to Lead Through Evidence</h1>
+      <p>A reflection on how my experience as a sixth-grade class president changed my understanding of leadership. Initially relying on authority and rules, I learned to build trust by listening, gathering different perspectives, and making decisions based on evidence rather than assumptions. This experience also shaped my later interest in Data Science: the same habit of questioning first impressions, identifying missing information, and examining evidence became central to how I approach analytical problems.</p>
+    </header>
+
+    <article class="entry-body">
+      <p>
+        For the tenth time that morning, I shouted, “Everyone, silence!” My classmates stopped talking for a second and turned toward me. I held my attendance register tightly, waiting for the room to quiet down. Instead, someone laughed. Then another person joined in. Within seconds, the classroom had returned to the same chaos as before. I was standing in front of thirty sixth-graders, yet I could not even make them listen to me. It was a strange feeling because, until that moment, I had been certain that I was good at leadership.
+      </p>
+      <p>
+        In primary school, being a class president had always felt easy. I was the student teachers trusted with responsibilities, the one they praised for being disciplined and dependable. My classmates usually followed my instructions without much resistance. I was often the model student, and I had become so used to being trusted and obeyed that I began to believe I had a natural talent for leadership. To me, leadership seemed simple: know the rules, do your part, and make sure everyone else does theirs.
+      </p>
+      <p>
+        Sixth grade broke that idea almost immediately. My new classmates had stronger personalities and their own opinions about what they should or should not do. They did not automatically respect the title of class president. At the same time, my teachers expected more from me because they had trusted me with the role. Suddenly, every decision seemed to put something at risk. If I reported a friend for breaking a rule, I could lose their trust. They might think I was choosing the teacher over them. If I ignored what they had done, I would disappoint the teachers who expected me to be responsible. I felt caught between two groups of people I cared about.
+      </p>
+      <p>
+        At first, I responded by trying to become stricter. I reminded my classmates about the rules. I told them to be quiet. I warned them when they were breaking regulations. When they ignored me, I raised my voice. I thought that if I showed enough authority, people would eventually respect it. They did not. The more I tried to use my position, the more it became obvious that my position itself meant very little. I had been given the title of class president, but nobody had promised me their respect.
+      </p>
+      <p>
+        The moment that changed my thinking came during an argument between two classmates over a group project. One student was angry because part of the group's work had been changed. He believed that another student had deliberately ruined the project. From what I first heard, it sounded straightforward. Someone had made the changes, the project was damaged, and I thought my job was simply to find out who had done it. I honestly did not want to get involved. It was their group project, their argument, and their problem. But my teacher asked me to handle the situation.
+      </p>
+      <p>
+        So I started with the person who had complained. He explained what he had seen and why he believed his classmate had ruined the work on purpose. His story made sense. Then I talked to the other student. His story also made sense. He said he had not been trying to destroy the project. He had noticed a serious problem in the structure of their work and had stayed up late trying to fix it. He had made several changes without properly explaining them to the rest of the group. That alone made me hesitate. 
+      </p>
+      <p>
+        Instead of choosing one side, I talked to several other classmates who had seen the group working. I asked what had happened before the project was changed, what each person had been doing, and what they had understood at the time. The more I listened, the more the original story fell apart. The student who first looked like the person responsible for ruining the project had actually been trying to save it. His mistake was not that he wanted to hurt the group. His mistake was that he had acted without communicating, while the others had judged his actions without knowing his reason. 
+      </p>
+      <p>
+        I remember how uncomfortable that realization felt. I had been ready to make a judgment before I had enough information. If I had stopped after hearing the first account, I could have blamed the wrong person simply because the first version of the story was convincing. I realized that the problem was not only that I needed to listen to both sides. I needed to recognize that the information I had at the beginning was incomplete.
+      </p>
+      <p>
+        That was the first time I really understood the value of evidence. A small amount of new information had completely changed my understanding of the situation. The more perspectives I collected, the more accurate the picture became. I began to wonder how many other problems I had misunderstood simply because I had reacted to what I saw first.
+      </p>
+      <p>
+        At the same time, the experience changed the way I thought about leadership. Until then, I had treated the position of class president as a source of power. I thought that because my teachers had chosen me, my classmates should listen to me. But the conflict showed me another side of leadership: responsibility can be assigned, but trust cannot. My classmates did not need another person telling them what to do. They needed someone who could help solve problems without immediately taking sides.
+      </p>
+      <p>
+        So I changed the way I worked with them. When someone broke a rule, I stopped assuming I already knew why. When two classmates argued, I listened to both before deciding what to do. When my friends were involved, I did not simply protect them because they were my friends, but I also did not report them without understanding the situation. I had to find a balance between being responsible to my teachers and remaining someone my classmates could trust.
+      </p>
+      <p>
+        Most importantly, I started trying to become useful. When there was a disagreement, I helped people talk through it. When a classmate had a problem with a teacher or another student, I helped explain what had happened. I still reminded people about rules and took my responsibilities seriously, but I no longer believed that leadership meant controlling people.
+      </p>
+      <p>
+        Slowly, the way my classmates saw me changed. The students who had once laughed when I shouted for silence began coming to me with their problems. They trusted me with things that had nothing to do with my official responsibilities. I had wanted my classmates to respect me because I was the class president. Instead, I learned that respect came from whether people believed I would listen to them, help them, and treat them fairly.
+      </p>
+      <p>
+        I had started sixth grade believing that authority created leadership. I ended it understanding that leadership creates its own authority. I did not have the words for the other lesson at the time, but it stayed with me for years. I became more interested in situations where the first answer could be wrong because the information was incomplete.
+      </p>
+      <p>
+        That is one reason my later interest in Data Science felt so natural to me. I was drawn to the idea that a problem could look one way at first and completely different after you examined the evidence underneath it. In that classroom, I had done this in a very simple way: I collected different accounts, compared them, and changed my conclusion when the evidence no longer supported my first assumption. Data Science gave me a more systematic way to explore the same idea.
+      </p>
+      <p>
+        What interested me was not simply numbers or programming. It was the process of finding what I could not see immediately. That way of thinking has also changed how I approach problems more generally. I have become less comfortable with easy answers and more willing to ask what information is missing, whose perspective I have not heard, and whether the conclusion I am about to make is actually supported by enough evidence.
+      </p>
+      <p>
+        I know that university will place me in a very different environment from a sixth-grade classroom. I will meet people with different backgrounds, opinions, and ways of working. I may join teams where nobody knows me, where I will not have a title, and where I cannot expect people to trust me simply because I take responsibility for a project. That is exactly the kind of environment in which I want to apply what I learned.
+      </p>
+      <p>
+        I want to be the person who can step into an uncertain situation, listen to different people, understand the problem before trying to solve it, and take responsibility once a decision has to be made. In a group project, that might mean helping a team move past a disagreement. In a research project, it might mean questioning a result that seems too obvious. In Data Science, it might mean looking at the evidence beneath a pattern before deciding what the pattern means.
+      </p>
+      <p>
+        The lesson I learned in sixth grade was not simply that I should become a better leader. It was that leadership and analysis begin with the same habit: resisting the urge to decide too quickly. That morning, I thought the hardest part of being a class president was getting thirty students to be quiet. I was wrong. The harder task was learning how to understand thirty different people well enough that they would trust me when I spoke. And that is still the kind of authority I do not want, the authority that comes from being given a position, but the authority that grows when people know that I have listened, thought carefully, and will take responsibility for what I do next.
+      </p>
+    </article>
+
+    <nav class="entry-nav" id="entry-nav" data-source="./entries.json"></nav>
+    <!-- ========================================================== -->
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <h2>Contact</h2>
+      <nav class="footer-links">
+        <a href="mailto:ncdh.moony@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/ncdhmoony/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/ncdhmoony" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
